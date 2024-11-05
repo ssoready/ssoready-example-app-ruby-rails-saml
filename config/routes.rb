@@ -11,5 +11,9 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "home#index"
+
+  get "saml-redirect" => "home#saml_redirect"
+  get "ssoready-callback" => "home#ssoready_callback"
+  # get "logout" => "home#logout"
 end

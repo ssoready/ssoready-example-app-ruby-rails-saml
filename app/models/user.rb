@@ -3,10 +3,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-end
 
-class NoPasswordUser < User
   def password_required?
-    false
+    # users provisioned via SAML have a nil password
+    !!password
   end
 end
