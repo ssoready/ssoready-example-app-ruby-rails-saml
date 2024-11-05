@@ -4,3 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 end
+
+class NoPasswordUser < User
+  def password_required?
+    false
+  end
+end
