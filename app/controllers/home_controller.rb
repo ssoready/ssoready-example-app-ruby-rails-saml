@@ -20,7 +20,7 @@ class HomeController < ApplicationController
   end
 
   # This is the action users visit when they submit the "Log in with SAML" form
-  # in this demo app.  
+  # in this demo app.
   def saml_redirect
     # To start a SAML login, you need to redirect your user to their employer's
     # particular Identity Provider. This is called "initiating" the SAML login.
