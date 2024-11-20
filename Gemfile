@@ -58,4 +58,4 @@ end
 
 gem "devise", "~> 4.9"
 
-gem "ssoready", "~> 0.1.0"
+gem "ssoready", "~> 1.0.0"
