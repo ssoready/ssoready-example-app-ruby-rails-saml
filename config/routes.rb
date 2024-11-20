@@ -15,5 +15,5 @@ Rails.application.routes.draw do
 
   get "saml-redirect" => "home#saml_redirect"
   get "ssoready-callback" => "home#ssoready_callback"
-  # get "logout" => "home#logout"
+  get "logout" => "home#logout"
 end
